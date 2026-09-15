@@ -1,0 +1,177 @@
+:root {
+  --text: #3a362f;
+  --background: #f7f1e8;
+  --border: #3a362f;
+  --accent: #c97b5b;
+  --card-background: #e4ddcf;
+}
+
+html {
+  font-family:
+    Fira Sans,
+    sans-serif;
+  background-color: #f7f1e8;
+  color: var(--text);
+}
+
+main {
+  padding: 20px 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 3px solid #8b746e;
+  gap: 20px;
+}
+
+.about-section h1 {
+  font-size: 25px;
+  align-items: center;
+  margin: 20px 10px 14px 10px;
+  display: flex;
+  gap: 15px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.about-section h2 {
+  font-size: 20px;
+  align-items: center;
+  margin: 20px 10px 14px 10px;
+  display: flex;
+  gap: 15px;
+  color: var(--text);
+  font-weight: 300;
+}
+.nav-bar {
+  display: flex;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border-color: #8b746e;
+  border-style: solid;
+}
+
+.profile-section h1 {
+  font-size: 20px;
+  align-items: center;
+  margin: 20px 10px 14px 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-color: #8b746e;
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 20px;
+}
+
+.profile-section img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+}
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+.project-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mhacto-card,
+.paraiso360-card {
+  background-color: var(--card-background);
+  border-color: color-mix(in srgb, var(--border) 30%, transparent);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgba(58, 54, 47, 0.05);
+  margin: 30px 10px 30px 35px;
+  padding: 10px 20px;
+  width: 350px;
+  height: auto;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* projects picture modifier*/
+.mhacto-card img,
+.paraiso360-card img {
+  width: auto;
+  height: 150px;
+  padding: 10px 10px;
+  margin: 1px 0px 10px 0px;
+}
+
+/* experience section */
+.experience-section {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ojt-experience {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--border) 30%, transparent);
+  border-width: 1px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--card-background);
+}
+.paraiso360-experience {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--border) 30%, transparent);
+  border-width: 1px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--card-background);
+}
+
+/* Certificate Section */
+.certificate-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.microsoft-azure-certificate {
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--border) 30%, transparent);
+  border-width: 1px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--card-background);
+}
+footer {
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+  border-style: solid;
+  background-color: var(--card-background);
+}
