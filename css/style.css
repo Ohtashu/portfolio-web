@@ -1,0 +1,188 @@
+/* --- Global Variables --- */
+:root {
+  --text: #1a1a1d; /* Deep ink black */
+  --background: #f4ece1; /* Shinobi scroll parchment */
+  --border: #2c3e50; /* Hidden Leaf headband navy blue */
+  --accent: #ff7b00; /* Iconic Uzumaki orange */
+  --card-background: #ffffff; /* Clean white for readable cards */
+}
+/* --- Base Reset & Typography --- */
+* {
+  box-sizing: border-box; /* Ensures padding doesn't break your widths */
+}
+
+html {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: var(--background); /* Fixed to use variable */
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* --- Header & Navigation --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 3px solid var(--border);
+  gap: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  border: 1px solid var(--border); /* Condensed border properties */
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar a {
+  font-size: 18px;
+}
+
+/* --- Profile Section --- */
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Added to vertically center the image and text */
+  gap: 20px;
+  border: 2px dashed var(--border); /* Condensed border properties */
+  border-radius: 20px;
+  padding: 10px 20px; /* Added padding so it doesn't hug the text tightly */
+}
+
+.profile-section h1 {
+  font-size: 20px;
+  margin: 0; /* Removed heavy margins since flexbox gap handles spacing */
+}
+
+.profile-section img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+
+/* --- About Section --- */
+/* Grouped shared styles for headers to save space */
+.about-section h1,
+.about-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 10px 14px 10px;
+}
+
+.about-section h1 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.about-section h2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* --- Projects Section --- */
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Widened min-width for better reading */
+  gap: 25px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.projects-grid {
+  background-color: var(--card-background);
+  border: 1px solid color-mix(in srgb, var(--border) 30%, transparent);
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(58, 54, 47, 0.05);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Push the "View Code" link to the bottom if descriptions vary in length */
+  justify-content: space-between;
+
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.projects-grid:hover {
+  box-shadow: 10px 10px 20px rgba(58, 54, 47, 0.15);
+  transform: translateY(-8px);
+  border-color: var(--accent);
+}
+
+/* Style the language badge injected by script.js */
+.language-badge {
+  background-color: var(--border);
+  color: var(--card-background);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.link {
+  text-decoration: underline;
+}
+/* --- Experience & Certificate Sections --- */
+.experience-section,
+.certificate-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px; /* Gives breathing room between sections */
+}
+
+/* Grouped all experience and certificate cards into one DRY rule */
+/* Grouped all experience, certificate, and education cards */
+.ojt-experience,
+.paraiso360-experience,
+.microsoft-azure-certificate,
+.education-card {
+  background-color: var(--card-background);
+  border: 1px solid color-mix(in srgb, var(--border) 30%, transparent);
+  padding: 10px 20px;
+  border-radius: 10px;
+  /* Add transition for smooth hover effects */
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Add interactive hover state */
+.ojt-experience:hover,
+.paraiso360-experience:hover,
+.microsoft-azure-certificate:hover,
+.education-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 5px 5px 15px rgba(44, 62, 80, 0.1);
+}
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 20px; /* Cleaned up padding */
+  border-top: 1px solid var(--border); /* Added specific border direction */
+  background-color: var(--card-background);
+}

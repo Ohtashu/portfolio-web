@@ -1,120 +1,100 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juan Carlos - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="profile-section">
-        <img src="profile.png" alt="picture of me" class="picture" />
-        <h1>Juan Carlos A. Flores</h1>
-      </div>
-      <div class="nav-bar">
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certificate">Certificate</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Carlos - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <div class="profile-section">
+    <img src="profile.png" alt="picture of me" class="picture" />
+    <h1>Juan Carlos A. Flores</h1>
+  </div>
+  <div class="nav-bar">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <main>
-      <section class="about-section" id="about">
-        <h1>Hello</h1>
-        <h2>I'm Juan Carlos</h2>
+<main>
+  <div id="pixel-cursor"></div>
 
-        <h1>Web Developer</h1>
-      </section>
+  <section class="about-section" id="about">
+    <h1>Hello</h1>
+    <h2>I'm Juan Carlos</h2>
+    <h1 class="accent-text">Web Developer</h1>
+  </section>
 
-      <section class="project-section" id="projects">
-        <a href="">
-          <div class="mhacto-card" id="mhacto-card">
-            <img
-              src="mhacto-website/dashboard.png"
-              alt="screenshot of mhacto-website"
-            />
-            <h1>MHACTO Website</h1>
-            <p>Role: Web Developer</p>
-            <p>
-              This is the MHACTO website, The system was fully developed with AI
-              assistance and is currently being refined as a public prototype.
-              Although the project was not funded, I changed its name and
-              continued working on it to demonstrate its potential.
-            </p>
-          </div>
-        </a>
+  <section class="project-section" id="projects">
+    <h1>My Projects</h1>
+    <div id="projects-container" class="project-grid"></div>
+  </section>
 
-        <a href="">
-          <div class="paraiso360-card">
-            <img
-              src="src/project/paraiso360.png"
-              alt="Screenshot of the Paraiso360 website"
-            />
-            <h1>Paraiso360 Cemetery Website</h1>
-            <p>Role: Quality Assurance Specialist</p>
-            <p>This is a cemetery website built with a tracking map.</p>
-          </div>
-        </a>
-      </section>
-      <section class="experience-section" id="experience">
-        <h1>My Experience</h1>
-        <div class="ojt-experience">
-          <h1>MHACTO-Bocaue</h1>
-          <h3>Role: Web-Developer</h3>
-          <p>
-            Worked as a web developer using a tech stack of React, Tailwind CSS,
-            and vanilla PHP. I used AI-assisted coding, commonly known as vibe
-            coding.
-          </p>
-        </div>
+  <section class="experience-section" id="experience">
+    <h1>My Experience</h1>
+    <div class="ojt-experience">
+      <h1>MHACTO-Bocaue</h1>
+      <h3>Role: Web Developer</h3>
+      <p>
+        Worked as a web developer using a tech stack of Next.js, React, Tailwind CSS,
+        and PHP. I utilized AI-assisted tools and custom REST APIs to build out the platform.
+      </p>
+    </div>
 
-        <div class="paraiso360-experience">
-          <h1>Capstone Project</h1>
-          <h3>Role: Quality Assurance (QA)</h3>
-          <p>
-            Worked as a QA specialist, maintaining system stability and
-            performing tests to ensure that the website remained stable.
-          </p>
-        </div>
-      </section>
+    <div class="paraiso360-experience">
+      <h1>Paraiso360 (Capstone Project)</h1>
+      <h3>Role: Quality Assurance (QA) Lead</h3>
+      <p>
+        Worked as a QA specialist mapping database integrations and performing functional tests
+        aligned with ISO 25010 standards to ensure system stability.
+      </p>
+    </div>
+  </section>
 
-      <section class="certificate-section" id="certificate">
-        <h1>My Certificates</h1>
-        <div class="microsoft-azure-certificate">
-          <h1>Microsoft Azure: AI Fundamentals</h1>
-          <a href="#LINK">Click here to verify the certification.</a>
-        </div>
-      </section>
-      
-      <section class="skills-section" id="skills">
-        <h1>My Skills</h1>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Tailwind CSS</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-        </ul>
-      </section>
-      <section class="contact-section" id="contact">
-        <h1>Contact Me</h1>
-        <p>Email: <a href="mailto:juan.carlos.flores@example.com">juan.carlos.flores@example.com</a></p>
-        <p>Phone: <a href="tel:+639995090824">+63 (999) 509-0824</a></p>
-        
+  <section class="certificate-section" id="certificate">
+    <h1>My Certificates</h1>
+    <div class="microsoft-azure-certificate">
+      <h1>Microsoft Azure: AI Fundamentals (AI-900)</h1>
+      <a href="#LINK">Click here to verify the certification.</a>
+    </div>
+    <div class="microsoft-azure-certificate">
+      <h1>Oracle Academy: Java Fundamentals</h1>
+      <a href="#LINK">Click here to verify the certification.</a>
+    </div>
+  </section>
 
-      </section>
-      </main>
-      <footer>
-        <p>&copy; 2024 Juan Carlos A. Flores. All rights reserved.</p>
-      </footer>
-  </body>
+  <section class="skills-section" id="skills">
+    <h1>My Skills</h1>
+    <ul>
+      <li>HTML & CSS (Tailwind)</li>
+      <li>JavaScript (React, Next.js)</li>
+      <li>Java & Spring Boot</li>
+      <li>Python</li>
+      <li>PHP & MySQL / SQL Server</li>
+      <li>Linux (Arch, Fedora) & Bash Scripting</li>
+    </ul>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h1>Contact Me</h1>
+    <p>Email: <a href="mailto:juan.carlos.flores@example.com">juan.carlos.flores@example.com</a></p>
+    <p>Phone: <a href="tel:+639995090824">+63 (999) 509-0824</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Juan Carlos A. Flores. All rights reserved.</p>
+</footer>
+
+<script src="script/script.js"></script>
+</body>
 </html>
